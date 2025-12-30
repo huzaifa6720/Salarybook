@@ -1,0 +1,142 @@
+.payroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.payroll-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payroll-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.process-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.process-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.payroll-history-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.payroll-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.payroll-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.payroll-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.payroll-month {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    width: 150px;
+}
+
+.payroll-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-val {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.status-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-draft {
+    background-color: #FEF3C7;
+    color: #D97706;
+}
+
+.status-calculated {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+.status-locked {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
